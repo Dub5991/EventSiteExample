@@ -1,0 +1,187 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Set font family */
+    background-color: #f0e6d0; /* Set background color */
+    background-image: url(/images/walking_path.jpeg); /* Set background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set height to 100% of viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: visible; /* Allow horizontal overflow */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, Opera */
+}
+
+header {
+    background-color: #9fc7a6; /* Set background color */
+    border-radius: 15px; /* Round the corners */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    height: 50px; /* Set height */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1; /* Ensure header is above other elements */
+}
+
+h1 {
+    color: rgb(249, 255, 234); /* Set text color */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Add text shadow */
+    padding: 10px; /* Add padding */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+main {
+    background-color: #f4faeb; /* Set background color */
+    border-radius: 15px; /* Round the corners */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    margin-bottom: 100px; /* Prevent overlap with footer */
+}
+
+button {
+    background-color: rgb(236, 221, 202); /* Set background color */
+    height: 20px; /* Set height */
+    width: 200px; /* Set width */
+    border-radius: 10px; /* Round the corners */
+    border-color: #5aa067; /* Set border color */
+    margin: 10px; /* Add margin */
+}
+
+footer {
+    display: flex; /* Use flexbox */
+    color: #ffffff; /* Set text color */
+    width: 100%; /* Set width to 100% */
+    justify-content: flex-end; /* Align items to the end */
+    text-align: right; /* Align text to the right */
+    margin: 5px 0; /* Add vertical margin */
+    padding: 5px; /* Add padding */
+    background-color: #9fc7a6; /* Set background color */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Add box shadow */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+img {
+    display: flexbox; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    color: #333; /* Set text color */
+    background-color: #e0e0e0; /* Set background color */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.336); /* Add box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+
+img:hover {
+    transform: scale(1.05); /* Scale up the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhance box shadow on hover */
+}
+
+iframe {
+    display: block; /* Display as block element */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* Set position to relative */
+    left: -25px; /* Move left by 25px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+#contact_form {
+    background-color: #e0e0e0; /* Set background color */
+}
+
+#food-menu {
+    background-color: #bdc4a6; /* Set background color */
+    margin-top: 50px; /* Add top margin */
+    width: 75%; /* Set width to 75% */
+    padding: 5px; /* Add padding */
+    border-radius: 15px; /* Round the corners */
+    margin: 0 auto; /* Center horizontally */
+    display: table; /* Display as table */
+}
+
+#food-menu th, #food-menu td {
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+#food-menu tr:nth-child(even) {
+    background-color: #f2f2f2; /* Set background color for even rows */
+}
+
+#card {
+    background-color: rgba(94, 129, 103, 0.5); /* Set background color with transparency */
+    width: 100%; /* Set width to 100% */
+    max-width: 250px; /* Set maximum width */
+    border-radius: 15px; /* Round the corners */
+    margin: 10px auto; /* Add margin and center horizontally */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+#loc_card {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    font-size: 1.5em; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    color: #333; /* Set text color */
+    padding: 20px; /* Add padding */
+    background-color: #e0e0e0; /* Set background color */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+#container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define columns */
+    gap: 20px; /* Add gap between items */
+    padding: 20px; /* Add padding */
+}
+
+#location {
+    margin: 50px; /* Add margin */
+    border-radius: 15px; /* Round the corners */
+    padding: 20px; /* Add padding */
+}
+
+.dropdown {
+    position: relative; /* Set position to relative */
+}
+
+.dropdown-content {
+    display: none; /* Hide by default */
+    position: absolute; /* Set position to absolute */
+    background-color: #f3e7b6; /* Set background color */
+    min-width: 160px; /* Set minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.342); /* Add box shadow */
+    border-radius: 10px; /* Round the corners */
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0); /* Set text color */
+    padding: 12px 16px; /* Add padding */
+    text-decoration: double; /* Set text decoration */
+    display: inline-block; /* Display as inline-block */
+}
+
+.dropdown-content a:hover {
+    background-color: #f3e7b6;; /* Set background color on hover */
+    border-radius: 10px; /* Round the corners */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fffafa; /* Set background color on hover */
+}
+
+.dropdown-content:hover {
+    display: block; /* Show dropdown content on hover */
+    background-color: #9fc7a6; /* Set background color on hover */
+}
