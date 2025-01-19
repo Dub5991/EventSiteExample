@@ -8,6 +8,7 @@ html {
     overflow-y: scroll; /* Enable vertical scrolling */
     overflow-x: visible; /* Allow horizontal overflow */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
+    background-attachment: fixed; /* Make background image fixed */
 }
 
 html::-webkit-scrollbar {
@@ -25,6 +26,17 @@ header {
     z-index: 1; /* Ensure header is above other elements */
 }
 
+article {
+    background-color: rgba(94, 129, 103, 0.5); /* Set background color with transparency */
+    width: 100%; /* Set width to 100% */
+    max-width: 600px; /* Set maximum width */
+    border-radius: 15px; /* Round the corners */
+    margin: 20px auto; /* Add margin and center horizontally */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+
 h1 {
     color: rgb(249, 255, 234); /* Set text color */
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Add text shadow */
@@ -36,9 +48,12 @@ h1 {
 main {
     background-color: #f4faeb; /* Set background color */
     border-radius: 15px; /* Round the corners */
-    padding: 10px; /* Add padding */
+    padding: 20px; /* Add padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
-    margin-bottom: 100px; /* Prevent overlap with footer */
+    margin: 20px auto 100px auto; /* Add margin and center horizontally */
+    max-width: 1200px; /* Set maximum width */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 button {
@@ -62,6 +77,10 @@ footer {
     border-radius: 15px; /* Round the corners */
     box-shadow: 0 4px 8px rgb(0, 0, 0); /* Add box shadow */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+
 }
 
 img {
@@ -89,26 +108,36 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
 
+#events {
+    width: 100%; /* Set width to 100% of parent element */
+    margin: 10px; /* Remove default margin */
+    padding: 10px; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
 #contact_form {
     background-color: #e0e0e0; /* Set background color */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    border-radius: 15px; /* Round the corners */
+    width: fit-content; /* Fit the content */
 }
 
 #food-menu {
     background-color: #bdc4a6; /* Set background color */
-    margin-top: 50px; /* Add top margin */
+    margin: 40px auto; /* Add margin and center horizontally */
     width: 75%; /* Set width to 75% */
-    padding: 5px; /* Add padding */
+    padding: 20px; /* Add padding */
     border-radius: 15px; /* Round the corners */
-    margin: 0 auto; /* Center horizontally */
-    display: table; /* Display as table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 #food-menu th, #food-menu td {
-    padding: 10px; /* Add padding */
+    padding: 20px; /* Add padding */
     text-align: center; /* Center text */
 }
 
-#food-menu tr:nth-child(even) {
+#food-menu tr:nth-of-type(even) {
     background-color: #f2f2f2; /* Set background color for even rows */
 }
 
